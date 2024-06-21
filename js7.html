@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Constructors</h1>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create 2 Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+const myBrother=new Person("Vrishik","kamel",15,"black");
+
+// Add nationality to first object
+myFather.nationality = "English";
+myMother.nationality="hindi";
+
+// Display nationality 
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality+" "+ myMother.nationality;
+document.getElementById("demo1").innerHTML="My Brother"+" "+myBrother.firstName+" "+myBrother.lastName+"  "+myBrother.age+" " +myBrother.eyeColor;
+</script>
+
+</body>
+</html>
