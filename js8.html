@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Constructors</h1>
+
+<p id="demo"></p>
+<!--This code is for changing the name of a person or any other value with the help of changeName() function with prototype-->
+<script>
+// Constructor Function for Person Objects
+function Person(firstName,lastName,age,eyeColor) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+}
+
+// Create a Person Object
+const myMother = new Person("Sally","Rally",48,"green");
+
+Person.prototype.changeName = function (name) {
+  this.firstName = name;
+}
+// Change Name
+myMother.changeName("Lara");
+
+// Display Name
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.firstName;
+</script>
+
+</body>
+</html>
