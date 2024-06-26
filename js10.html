@@ -2,6 +2,12 @@
 <html>
 <body>
 
+<p id="p1">
+This is texture
+This is texture
+This is texture
+</p>    
+
 <h2>Finding HTML Elements Using document.forms</h2>
 
 <form action="">
@@ -11,6 +17,13 @@ First name: <input type="text" name="fname" value="Donald">
 
 <p id="demo"></p>
 
+
+
+<input type="button" value="hide text"
+onclick="document.getElementById('p1').style.visibility='hidden'">
+
+<input type="button" value="show text"
+onclick="document.getElementById('p1').style.visibility='visible'">
 <script>
 document.getElementById("demo").innerHTML =
 "Number of forms: " + document.forms.length;
