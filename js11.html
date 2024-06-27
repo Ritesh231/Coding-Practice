@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <script>
 function bgChange(bg) {
   document.body.style.background = bg;
+}
+
+function disabl(){
+    document.getElementById("dis").disabled = true;
 }
 </script>
 </head>
@@ -12,6 +15,9 @@ function bgChange(bg) {
 
 <h2>Change background color</h2>
 <p>Mouse over the squares!</p>
+
+<button id="dis">okk</button>
+<button onclick="disabl()">disabled</button>
 
 <table style="width:300px;height:100px">
   <tr>
@@ -26,12 +32,14 @@ function bgChange(bg) {
     <td onmouseover="bgChange(this.style.backgroundColor)" 
     onmouseout="bgChange('transparent')"
     style="background-color:Silver">
+    </td>
     <td onmouseover="bgChange(this.style.backgroundColor)"
     onmouseout="bgChange('transparent')"
     style="background-color:Red">
+    </td>
     <td onmouseover="bgChange(this.style.backgroundColor)"
     onmouseout="bgChange('transparent')"
-    style="background-color:green"
+    style="background-color:Green">
     </td>
   </tr>
 </table>
