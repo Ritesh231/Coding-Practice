@@ -16,6 +16,7 @@
 <p id="demo7"></p>
 <p id="demo8"></p>
 <p id="demo9"></p>
+<p id="demo10"></p>
 
 
 <script>
@@ -56,6 +57,14 @@ document.getElementById("demo8").innerHTML=points;
 const flat=[2,5,8,12,16,25]
 const newArr=flat.flatMap((x)=>x*2);
 document.getElementById("demo9").innerHTML=newArr;
+
+//The entries() method returns an Array Iterator object with key/value pairs:
+const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+/*for loop in javascript*/
+for (let x of f) {
+  document.getElementById("demo10").innerHTML += x + "<br>";
+}
 
 </script>
 
