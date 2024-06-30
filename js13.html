@@ -10,6 +10,7 @@
 <p id="demo"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
+<p id="demo4"></p>
 
 <script>
 let text = "The rain in SPAIN stays mainly in the plain";
@@ -22,6 +23,10 @@ document.getElementById("demo2").innerHTML=Array.from(Arr);
 
 let text3 = "Hello world, welcome to the universe.";
 document.getElementById("demo3").innerHTML = text3.endsWith("world", 11);
+
+const temp=[23,25,27,29,41,49,52,56]
+let high=temp.findLast(x=>x>40)
+document.getElementById("demo4").innerHTML="the last temperature over 40 is "+high;
 </script>
 
 </body>
