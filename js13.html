@@ -19,6 +19,11 @@
 <p id="demo10"></p>
 <p id="demo11"></p>
 <p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="demo17"></p>
 
 
 <script>
@@ -76,6 +81,21 @@ document.getElementById("demo11").innerHTML=d;
 /*Specifying a month higher than 11, will not result in an error but add the overflow to the next year:*/
 const de=new Date(2024,14,25,10,45,12)
 document.getElementById("demo12").innerHTML=de;
+
+const year = new Date("2021-03-25")
+document.getElementById("demo13").innerHTML = year.getFullYear();
+
+//Math.floor(x) returns the value of x rounded down to its nearest integer:
+document.getElementById("demo14").innerHTML = Math.floor(4.7);
+
+//Math.trunc(x) returns the integer part of x:
+document.getElementById("demo15").innerHTML = Math.trunc(4.7);
+
+//Math.ceil(x) returns the value of x rounded up to its nearest integer:
+document.getElementById("demo16").innerHTML = Math.ceil(-4.9);
+
+//Math.round(x) returns the nearest integer:
+document.getElementById("demo17").innerHTML = Math.round(4.6);
 
 </script>
 
