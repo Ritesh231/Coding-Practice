@@ -13,6 +13,8 @@
 <p id="demo4"></p>
 <p id="demo5"></p>
 <p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
 
 <script>
 let text = "The rain in SPAIN stays mainly in the plain";
@@ -36,6 +38,11 @@ document.getElementById("demo5").innerHTML=fruits;
 
 fruits.sort();
 document.getElementById("demo6").innerHTML=fruits;
+
+const points=[10,40,50,30,80,20]
+document.getElementById("demo7").innerHTML=points;
+points.sort (function(a,b){return a-b})
+document.getElementById("demo8").innerHTML=points;
 
 </script>
 
