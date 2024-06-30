@@ -17,6 +17,8 @@
 <p id="demo8"></p>
 <p id="demo9"></p>
 <p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
 
 
 <script>
@@ -65,6 +67,15 @@ const f = fruits.entries();
 for (let x of f) {
   document.getElementById("demo10").innerHTML += x + "<br>";
 }
+/*JavaScript counts months from 0 to 11:
+January = 0.
+December = 11.*/
+const d=new Date(2024,3,25,10,45,12)
+document.getElementById("demo11").innerHTML=d;
+
+/*Specifying a month higher than 11, will not result in an error but add the overflow to the next year:*/
+const de=new Date(2024,14,25,10,45,12)
+document.getElementById("demo12").innerHTML=de;
 
 </script>
 
