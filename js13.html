@@ -11,6 +11,8 @@
 <p id="demo2"></p>
 <p id="demo3"></p>
 <p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
 
 <script>
 let text = "The rain in SPAIN stays mainly in the plain";
@@ -27,6 +29,14 @@ document.getElementById("demo3").innerHTML = text3.endsWith("world", 11);
 const temp=[23,25,27,29,41,49,52,56]
 let high=temp.findLast(x=>x>40)
 document.getElementById("demo4").innerHTML="the last temperature over 40 is "+high;
+
+const fruits=["Apple","Gauva","Mango","Banana","Cherry"]
+fruits.reverse();
+document.getElementById("demo5").innerHTML=fruits;
+
+fruits.sort();
+document.getElementById("demo6").innerHTML=fruits;
+
 </script>
 
 </body>
