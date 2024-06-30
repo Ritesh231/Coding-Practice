@@ -16,6 +16,7 @@
 <p id="demo7"></p>
 <p id="demo8"></p>
 
+
 <script>
 let text = "The rain in SPAIN stays mainly in the plain";
 const myArr = text.match("ain");
@@ -35,10 +36,16 @@ document.getElementById("demo4").innerHTML="the last temperature over 40 is "+hi
 const fruits=["Apple","Gauva","Mango","Banana","Cherry"]
 fruits.reverse();
 document.getElementById("demo5").innerHTML=fruits;
-
 fruits.sort();
 document.getElementById("demo6").innerHTML=fruits;
 
+/*--The compare function compares all the values in the array, two values at a time (a, b).
+
+When comparing 40 and 100, the sort() method calls the compare function(40, 100).
+
+The function calculates 40 - 100 (a - b), and since the result is negative (-60),  the sort function will sort 40 as a value lower than 100.
+
+--*/
 const points=[10,40,50,30,80,20]
 document.getElementById("demo7").innerHTML=points;
 points.sort (function(a,b){return a-b})
