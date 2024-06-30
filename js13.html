@@ -9,6 +9,7 @@
 
 <p id="demo"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
 
 <script>
 let text = "The rain in SPAIN stays mainly in the plain";
@@ -18,6 +19,9 @@ document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
 let text2="The rain in rainy season gives rain water to every living being so to rain is life for all lives  "
 const Arr=text2.matchAll("to");
 document.getElementById("demo2").innerHTML=Array.from(Arr);
+
+let text3 = "Hello world, welcome to the universe.";
+document.getElementById("demo3").innerHTML = text3.endsWith("world", 11);
 </script>
 
 </body>
