@@ -5,6 +5,7 @@
 <h2>The size Property</h2>
 
 <p id="demo"></p>
+<p id="demo2"></p>
 
 <script>
 // Create a Map
@@ -17,6 +18,8 @@ const fruits = new Map([
 fruits.delete("apples")
 
 document.getElementById("demo").innerHTML = fruits.size;
+//apple has deleted therefore ans is false in down line.
+document.getElementById("demo2").innerHTML=fruits.has("apples");
 </script>
 
 </body>
