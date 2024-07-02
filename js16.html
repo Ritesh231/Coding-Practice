@@ -6,20 +6,25 @@
 
 <p id="demo"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
 
 <script>
+
+const apples={name:"Apples"};
+const bananas={name:"Bananas"};   
+const oranges={name:"Oranges"}; 
 // Create a Map
-const fruits = new Map([
-  ["apples", 500],
-  ["bananas", 300],
-  ["oranges", 200]
-]);
+const fruits = new Map()
+fruits.set(apples,500);
+fruits.set(bananas,300);
+fruits.set(oranges,200);
 
 fruits.delete("apples")
 
 document.getElementById("demo").innerHTML = fruits.size;
 //apple has deleted therefore ans is false in down line.
 document.getElementById("demo2").innerHTML=fruits.has("apples");
+document.getElementById("demo3").innerHTML = fruits.get(bananas);
 </script>
 
 </body>
