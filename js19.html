@@ -5,6 +5,7 @@
 <h2>Object Destructuring</h2>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 // Create an Object
@@ -20,6 +21,10 @@ let {firstName, lastName} = person;
 // Display Primitive Values
 document.getElementById("demo").innerHTML =
 firstName + " " + lastName;
+
+const fruits=["apple","banana","mango","gauvas"]
+let [fruit1,,,fruit2]=fruits;
+document.getElementById("demo1").innerHTML=fruit1+"  "+fruit2;
 </script>
 
 </body>
