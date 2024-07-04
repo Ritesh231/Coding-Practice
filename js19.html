@@ -6,6 +6,7 @@
 
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
 
 <script>
 // Create an Object
@@ -25,6 +26,11 @@ firstName + " " + lastName;
 const fruits=["apple","banana","mango","gauvas"]
 let [fruit1,,,fruit2]=fruits;
 document.getElementById("demo1").innerHTML=fruit1+"  "+fruit2;
+
+const fruit=["apple","banana","mango","gauvas"]
+const {[0]:fruits1,[1]:fruits2}=fruit;
+document.getElementById("demo2").innerHTML=fruits1+" "+fruits2;
+
 </script>
 
 </body>
