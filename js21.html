@@ -8,6 +8,7 @@
 <button onclick="myfunction()">Try it</button>
 <p id="demo"></p>
 <p id="demo1">Visit America</p>
+<p id="demo2"></p>
 
 <script>
 let text = "Visit GeniusWorld!"; 
@@ -23,6 +24,10 @@ function myFunction(){
 let write = "Visit AncientWorld";
 let result = write.match(/ancientworld/i);
 document.getElementById("demo").innerHTML = result;
+
+let text1 = "Hellooo World! Hello W3Schools!"; 
+let result1 = text1.match(/lo*/g);
+document.getElementById("demo2").innerHTML = result;
 </script>
 
 </body>
