@@ -5,12 +5,24 @@
 <h1>JavaScript String Methods</h1>
 <p>Search a string for "W3Schools", and display the position of the match:</p>
 
+<button onclick="myfunction()">Try it</button>
 <p id="demo"></p>
+<p id="demo1">Visit America</p>
 
 <script>
 let text = "Visit GeniusWorld!"; 
 let n = text.search("Genius");
 document.getElementById("demo").innerHTML = n;
+
+function myFunction(){
+    let text=document.getElementById("demo1").innerHTML;
+    document.getElementById("demo1").innerHTML=
+    text.replace=("America","India");   
+}
+
+let write = "Visit AncientWorld";
+let result = write.match(/ancientworld/i);
+document.getElementById("demo").innerHTML = result;
 </script>
 
 </body>
