@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>Remove the comment (at the beginning of the lines) to test each case:</p>
+
+<p id="demo"></p>
+
+<script>
+
+x = 5 + 7;    // x.valueOf() is 12, typeof x is a number
+y = 5 + "7";  // x.valueOf() is 57, typeof x is a string
+z = "5" + 7;  // x.valueOf() is 57, typeof x is a string
+a = 5 - 7;    // x.valueOf() is -2, typeof x is a number
+b = 5 - "7";  // x.valueOf() is -2, typeof x is a number
+c = "5" - 7;  // x.valueOf() is -2, typeof x is a number
+d = 5 - "x";  // x.valueOf() is NaN, typeof x is a number
+
+document.getElementById("demo").innerHTML = x.valueOf() + " " + typeof z;
+</script>
+
+</body>
+</html>
+
