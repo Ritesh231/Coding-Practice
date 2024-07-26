@@ -5,10 +5,15 @@
 
 <p>ECMAScript 5 allows reserved words as property names.</p>
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 var obj = {name: "Safari", new: "yes"};
 document.getElementById("demo").innerHTML = obj.name;
+
+let text1="     Safari     ";
+let text2=text1.trim();
+document.getElementById("demo1").innerHTML="text1="+text1.length+"<br>text2="+text2.length;
 </script>
 
 </body>
