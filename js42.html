@@ -5,6 +5,8 @@
 <h2>Using an Object Literal</h2>
 
 <p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
 
 <script>
 // Create an empty Object
@@ -17,8 +19,24 @@ person.age = 50;
 person.eyeColor = "blue"; 
 
 // Display Data from Object
-document.getElementById("demo").innerHTML =
+document.getElementById("demo2").innerHTML =
 person.firstName + " is " + person.age + " years old.";
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+const myFather = new Person("John", "Doe", 50, "blue");
+const myBrother=new Person("ritesh","tamboli",20,"green");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + "."; 
+document.getElementById("demo1").innerHTML="My Brother is "+myBrother.age+".";
 </script>
 
 </body>
