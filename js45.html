@@ -6,6 +6,7 @@
 <p>Object.entries() makes it simple to convert an Object to a Map:</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 const fruits = {Bananas:300, Oranges:200, Apples:500}; 
@@ -13,6 +14,15 @@ const fruits = {Bananas:300, Oranges:200, Apples:500};
 const myMap = new Map(Object.entries(fruits));
 
 document.getElementById("demo").innerHTML = myMap;
+
+const fruit = [
+["apples", 300],
+["pears", 900],
+["bananas", 500]
+];
+
+const myObj = Object.fromEntries(fruit);
+document.getElementById("demo1").innerHTML = myObj.pears;
 </script>
 
 </body>
