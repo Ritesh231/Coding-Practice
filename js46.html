@@ -7,6 +7,7 @@
 <p>This example adds a new property to an object.</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 // Create an Object:
@@ -21,6 +22,18 @@ Object.defineProperty(person, "year", {value:"2009"})
 
 // Display the Property
 document.getElementById("demo").innerHTML = person.year;
+
+const persons = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "EN"
+}
+
+// Change Property
+Object.defineProperty(persons, "language", {enumerable:false});
+
+// Display all Properties
+document.getElementById("demo1").innerHTML = Object.getOwnPropertyNames(person);
 </script>
 
 </body>
