@@ -7,6 +7,7 @@
 <p>This example list the enumerable properties of an object.</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 // Create an object:
@@ -21,6 +22,18 @@ Object.defineProperty(person, "language", {enumerable:false});
 
 // Display all Enumerable Properties
 document.getElementById("demo").innerHTML = Object.keys(person);
+
+const persons = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+
+// Display data from the object using a getter:
+document.getElementById("demo1").innerHTML = persons.lang;
 </script>
 
 </body>
